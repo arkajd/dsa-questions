@@ -10,6 +10,7 @@ class ArrayReverse{
         }
     }
 
+    // Reverse the given array
     private static int[] reverse(int[] arr){
 
         int i = 0;
