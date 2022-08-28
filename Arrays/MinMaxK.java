@@ -16,7 +16,7 @@ public class MinMaxK {
     }
 
     // print kth smallest element in the array
-    private static void printKMin(int[] arr, int k){
+    static void printKMin(int[] arr, int k){
         Arrays.sort(arr);
         System.out.println(arr[k-1]);
     }
