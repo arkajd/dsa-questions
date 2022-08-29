@@ -6,6 +6,7 @@ public class MoveNegatives {
         print(result);
     }
 
+    // move negative elements to the left of the array (using 2 pointer technique)
     private static int[] moveNegativesLeft(int[] arr){
         int i = 0;
         int j = arr.length -1;
