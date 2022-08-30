@@ -8,6 +8,7 @@ public class Reverse {
         System.out.println(rev);
     }
 
+    // using 2 pointers
     private static String reverseString(String str){
         StringBuilder sbl = new StringBuilder(str);
         int left = 0;

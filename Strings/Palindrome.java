@@ -7,6 +7,8 @@ public class Palindrome {
         System.out.println(checkPalindrome(str));
     }
 
+    // compares left and right indexes, increasing and decreasing both by 1 respectively
+    // until left is greater than right
     private static boolean checkPalindrome(String str){
 
         int left = 0;
