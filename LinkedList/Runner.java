@@ -7,8 +7,9 @@ public class Runner {
         ll.append(new Node(2));
         ll.append(new Node(3));
         ll.insertAtStart(new Node(4));
-
-        ll.printReverse(ll.head);
+        ll.print();
+        ll.reverse();
+        ll.print();
     }
     
 }

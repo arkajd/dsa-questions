@@ -44,4 +44,25 @@ public class LinkedList {
         }
         temp.next = node;
     }
+
+    public void reverse(){
+
+        if(head==null || head.next==null){
+            return;
+        }
+
+        Node left = null;
+        Node mid = head;
+        Node right = head.next;
+
+        while(right.next!=null){
+            mid.next = left;
+            left = mid;
+            mid = right;
+            right = right.next;
+            mid.next = left;
+        }
+        right.next = mid;
+        head = right;
+    }
 }
