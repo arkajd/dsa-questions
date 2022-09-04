@@ -15,6 +15,7 @@ public class LinkedList {
         }
     }
 
+    // print values of linked list in reverse
     public void printReverse(Node node){
         if(node==null){
             return;
@@ -33,6 +34,7 @@ public class LinkedList {
         head = node;
     }
 
+    // add elements at the last position
     public void append(Node node){
         if(head==null){
             head = node;
@@ -45,6 +47,7 @@ public class LinkedList {
         temp.next = node;
     }
 
+    // reverse linked list
     public void reverse(){
 
         if(head==null || head.next==null){
