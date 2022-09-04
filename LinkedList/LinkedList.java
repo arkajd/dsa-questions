@@ -75,10 +75,25 @@ public class LinkedList {
     public void detectLoop(Node head){
         HashSet<Node> set = new HashSet<>();
         Node temp = head;
-        
+
         while(temp!=null){
             if(set.contains(temp)){
                 System.out.println(temp.data);
+                return;
+            }
+            set.add(temp);
+            temp = temp.next;
+        }
+    }
+
+    // remove loop in a linked list
+    public void removeLoop(Node head){
+        HashSet<Node> set = new HashSet<>();
+        Node temp = head;
+
+        while(temp!=null){
+            if(set.contains(temp.next)){
+                temp.next = null;
                 return;
             }
             set.add(temp);
