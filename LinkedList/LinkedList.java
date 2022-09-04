@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.HashSet;
+
 public class LinkedList {
     Node head;
 
@@ -67,5 +69,20 @@ public class LinkedList {
         }
         right.next = mid;
         head = right;
+    }
+
+    // detect loop in a linked list
+    public void detectLoop(Node head){
+        HashSet<Node> set = new HashSet<>();
+        Node temp = head;
+        
+        while(temp!=null){
+            if(set.contains(temp)){
+                System.out.println(temp.data);
+                return;
+            }
+            set.add(temp);
+            temp = temp.next;
+        }
     }
 }
